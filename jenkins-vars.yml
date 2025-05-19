@@ -21,7 +21,7 @@ repo_vars:
   - MULTIARCH='true'
   - CI='true'
   - CI_WEB='true'
-  - CI_PORT='5055'
+  - CI_PORT='5056'
   - CI_SSL='false'
   - CI_DELAY='300'
   - CI_DOCKERENV=''
