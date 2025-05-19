@@ -8,7 +8,7 @@ release_tag: latest
 ls_branch: main
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
-  - EXT_USER = 'bugalou'
+  - EXT_USER = 'sct'
   - EXT_REPO = 'overseerr'
   - BUILD_VERSION_ARG = 'OVERSEERR_VERSION'
   - LS_USER = 'linuxserver'
