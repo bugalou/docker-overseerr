@@ -22,13 +22,13 @@ RUN \
   apk add --no-cache \
     yarn && \
   if [ -z ${OVERSEERR_VERSION+x} ]; then \
-    OVERSEERR_VERSION=$(curl -sX GET "https://api.github.com/repos/sct/overseerr/releases/latest" \
+    OVERSEERR_VERSION=$(curl -sX GET "https://api.github.com/repos/bugalou/overseerr/releases/latest" \
     | awk '/tag_name/{print $4;exit}' FS='[""]'); \
   fi && \
   export COMMIT_TAG="${OVERSEERR_VERSION}" && \
   curl -o \
     /tmp/overseerr.tar.gz -L \
-    "https://github.com/sct/overseerr/archive/${OVERSEERR_VERSION}.tar.gz" && \
+    "https://github.com/bbugalou/overseerr/archive/${OVERSEERR_VERSION}.tar.gz" && \
   mkdir -p /app/overseerr && \
   tar xzf \
     /tmp/overseerr.tar.gz -C \
@@ -60,6 +60,6 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 5055
+EXPOSE 5056
 
 VOLUME /config
