@@ -28,7 +28,7 @@ RUN \
   export COMMIT_TAG="${OVERSEERR_VERSION}" && \
   curl -o \
     /tmp/overseerr.tar.gz -L \
-    "https://github.com/bbugalou/overseerr/archive/${OVERSEERR_VERSION}.tar.gz" && \
+    "https://github.com/bugalou/overseerr/archive/${OVERSEERR_VERSION}.tar.gz" && \
   mkdir -p /app/overseerr && \
   tar xzf \
     /tmp/overseerr.tar.gz -C \
