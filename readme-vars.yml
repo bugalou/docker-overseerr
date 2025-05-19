@@ -22,7 +22,7 @@ common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_ports: true
 param_ports:
-  - {external_port: "5055", internal_port: "5055", port_desc: "Port for Overseerr's web interface."}
+  - {external_port: "5056", internal_port: "5056", port_desc: "Port for Overseerr's web interface."}
 param_usage_include_vols: true
 param_volumes:
   - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files"}
@@ -31,7 +31,7 @@ nonroot_supported: true
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  Access the webui at `<your-ip>:5055`, for more information check out [Overseerr](https://overseerr.dev/).
+  Access the webui at `<your-ip>:5056`, for more information check out [Overseerr](https://overseerr.dev/).
 # init diagram
 init_diagram: |
   "overseerr:latest": {
