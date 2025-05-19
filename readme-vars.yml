@@ -1,7 +1,7 @@
 ---
 
 # project information
-project_name: overseerrcus
+project_name: overseerrbug
 project_url: "https://overseerr.dev/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr.png"
 project_blurb: |
