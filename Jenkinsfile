@@ -20,7 +20,7 @@ pipeline {
     QUAYIO_API_TOKEN=credentials('quayio-repo-api-token')
     GIT_SIGNING_KEY=credentials('484fbca6-9a4f-455e-b9e3-97ac98785f5f')
     EXT_GIT_BRANCH = 'master'
-    EXT_USER = 'sct'
+    EXT_USER = 'bugalou'
     EXT_REPO = 'overseerr'
     BUILD_VERSION_ARG = 'OVERSEERR_VERSION'
     LS_USER = 'linuxserver'
