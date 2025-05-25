@@ -60,6 +60,6 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 5056
+EXPOSE 5055
 
 VOLUME /config
